@@ -1,8 +1,18 @@
 {
   "name": "news-lister",
+  "description": "An application for exploring and searching news articles",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
+  "packageManager": "yarn@1.22.19",
+  "engines": {
+    "node": ">=18"
+  },
+  "author": {
+    "email": "sharathkr@pm.me",
+    "name": "shaarkr",
+    "url": "https://sharathkr.netlify.app"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc && vite build",

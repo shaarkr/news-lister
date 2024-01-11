@@ -32,9 +32,7 @@ const handleQuickSearch = (query: string) => {
 
 watch(
   () => route.params,
-  async (val) => {
-    console.log(val)
-
+  async () => {
     articlesStore.fetchNews(+route.params.page)
   },
   { immediate: true }

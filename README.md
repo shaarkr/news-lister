@@ -6,6 +6,18 @@ An application for exploring and searching news articles.
 
 This application is a Vue.js coding exercise that consumes a REST service to obtain a collection of JSON objects containing links to News Stories about a certain topic, renders any images from the news, and provides a link to the actual story.
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/727e74f4-9a6a-4b14-a253-7ff5229d5c2f/deploy-status)](https://app.netlify.com/sites/news-lister-wm/deploys)
+
+## Live Demo
+
+[News Lister - Preview](https://news-lister-wm.netlify.app/)
+
+## Screens
+
+| Desktop                                                  | Mobile                                                  |
+| -------------------------------------------------------- | ------------------------------------------------------- |
+| <img src="/docs/screenshots/desktop.png" height="450" /> | <img src="/docs/screenshots/mobile.png" height="450" /> |
+
 ## Features
 
 1. **Search News**: Enter a search term to find news articles. Keyword suggestions are provided.

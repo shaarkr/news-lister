@@ -7,13 +7,13 @@ export default function useHttpClient<T>() {
   const data = ref<T | null>(null)
 
   const httpClient = axios.create({
-    baseURL: 'https://content.guardianapis.com',
+    baseURL: import.meta.env.VITE_APP_API_BASE_URL,
     timeout: 10000,
     headers: {
       'Content-Type': 'application/json',
     },
     params: {
-      'api-key': 'test',
+      'api-key': import.meta.env.VITE_APP_API_KEY,
     },
   })
 

@@ -19,7 +19,14 @@ export const useArticlesStore = defineStore('articles', () => {
   const fetchNews = (page = 1) => {
     loadNews({
       method: 'GET',
-      url: `/search?q=${query.value}&show-fields=thumbnail,headline,trailText&show-tags=keyword&page=${page}&page-size=10`,
+      url: '/search',
+      params: {
+        q: query.value,
+        page,
+        'page-size': 10,
+        'show-fields': 'thumbnail,headline,trailText',
+        'show-tags': 'keyword',
+      },
     })
   }
 
@@ -35,7 +42,13 @@ export const useArticlesStore = defineStore('articles', () => {
   const fetchSuggestions = () => {
     loadSuggestions({
       method: 'GET',
-      url: `/tags?show-references=all&q=${query.value}&page=1&page-size=5`,
+      url: '/tags',
+      params: {
+        q: query.value,
+        page: 1,
+        'page-size': 5,
+        'show-references': 'all',
+      },
     })
   }
 

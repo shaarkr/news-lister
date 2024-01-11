@@ -8,5 +8,5 @@ export default {
       fontFamily: { sans: ['Open Sans', ...defaultTheme.fontFamily.sans] },
     },
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/forms')],
 }
